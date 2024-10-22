@@ -1,0 +1,23 @@
+pip install pipreqs
+python -m  pipreqs.pipreqs --force  .
+
+pip install pipreqs   
+pip install pip-tools      
+pipreqs --savepath=requirements.in && pip-compile
+
+
+pip freeze > requirements.txt
+
+
+pip install -r requirements.txt
+
+
+
+python3.12 -m venv .venv   
+source .venv/bin/activate 
+
+
+brew install tesseract
+
+
+https://github.com/tesseract-ocr/tessdata
