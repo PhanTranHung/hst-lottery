@@ -1,3 +1,5 @@
+# We save some commands for re-use
+
 pip install pipreqs
 python -m  pipreqs.pipreqs --force  .
 
