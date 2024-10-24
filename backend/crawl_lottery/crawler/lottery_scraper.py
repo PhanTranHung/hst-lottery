@@ -54,10 +54,10 @@ def scrape_minh_ngoc(channel: str, date: datetime.datetime):
     extracted_content = match.group(1)
     sel = Selector(extracted_content)
     
-    td_tags = sel.css("div.content tr:nth-child(n + 2) td:nth-child(2)").getall()
+    prizes = sel.css("div.content tr:nth-child(n + 2) td:nth-child(2)::text").getall()
 
-    for td in td_tags:
-        print(td)
+    for td in prizes:
+        print(td.strip())
 
     # print("=========")
     # print(response.text)

@@ -15,7 +15,7 @@ app = Flask(__name__)
 client = MongoClient(config.MONGO_URI)
 db = client.lottery_db
 
-
+# The scrapy libraries is too complex for use
 # @app.route('/craw', methods=['GET'])
 # def craw_lottery_results():
 #     channels = request.args.get('channels')
